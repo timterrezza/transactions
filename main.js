@@ -53,11 +53,11 @@ var runAjax = function (walletID) {
                 }
             }
             for (var key in toTotal) {
-                var markup = '<tr><td>' + key + '</td><td>' + toTotal[key];
+                var markup = '<tr><td>' + key + '</td><td>' + toTotal[key] + '</td>';
                 $('#toTable tbody').append(markup);
             }
             for (var key in fromTotal) {
-                var markup = '<tr><td>' + key + '</td><td>' + fromTotal[key];
+                var markup = '<tr><td>' + key + '</td><td>' + fromTotal[key] + '</td>';
                 $('#fromTable tbody').append(markup);
             }
         }
