@@ -35,7 +35,7 @@ var runAjax = function (walletID) {
                     var markup = '<tr><td>' + date + '</td><td>' + to + '</td><td>' + from + '</td><td>' + amount + '</td></tr>';
                     $('#transactionTable tbody').append(markup);
                 }
-                if (to != 'Kyle Gibbons') {
+                if (to != 'Nighthawk') {
                     if (toTotal[to]) {
                         toTotal[to] += amount;
                     }
@@ -43,7 +43,7 @@ var runAjax = function (walletID) {
                         toTotal[to] = amount;
                     }
                 }
-                if (from != 'Kyle Gibbons') {
+                if (from != 'Nighthawk') {
                     if (fromTotal[from]) {
                         fromTotal[from] += amount;
                     }
