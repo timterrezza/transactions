@@ -1,0 +1,22 @@
+.body-padding {
+    padding: 50px;
+}
+
+.transaction-button {
+    margin-bottom: 20px;
+}
+
+.transaction-table {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.date-input {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.date-label {
+    padding-top: 2px;
+}
