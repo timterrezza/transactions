@@ -1,1 +1,87 @@
-2
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Ethereum Wallet</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/eth.jpeg">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="spinner" class="loader hide"></div>
+        <div class="row heading">
+            <img src="img/eth.jpeg" class="eth-icon"><h1>Ethereum Wallet Transactions</h1><h1 class="header-divider">||</h1><h1>Current Wallet:</h1><h1 id="pageHeader"></h1>
+        </div>
+        <div class="body-padding">
+            <div class="row">
+                <div id="error"></div>
+            </div>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-danger" type="button" id="getTransactionsButton">Get Transactions</button>
+                    </div>
+                    <input type="text" class="form-control" id="walletID" placeholder="Currently Checking: 0xf4BC22Cce0D48Ab06BEFbeC2d42936a529a2E708. Enter a wallet address to change this">
+                </div>
+                <p class="date-label">Start Date:</p><input id="startDate" type="date" value="1992-11-07" class="date-input">
+                <p class="date-label">End Date:</p><input id="endDate" type="date" value="2018-12-30" class="date-input">
+            </div>
+            <div class="section">
+                <div class="row section-header">
+                    <h2>ALL TRANSACTIONS (date, to, from, amount)</h2>
+                </div>
+                <div class="row section-body">
+                    <table class="table table-striped" id="transactionTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">To</th>
+                                <th scope="col">From</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row section-header">
+                    <h2>TOTAL SENT (to, total)</h2>
+                </div>
+                <div class="row section-body">
+                    <table class="table table-striped" id="toTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">To</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row section-header">
+                    <h2>TOTAL RECEIVED (from, total)</h2>
+                </div>
+                <div class="row section-body">
+                    <table class="table table-striped" id="fromTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">From</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
