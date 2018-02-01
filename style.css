@@ -1,13 +1,63 @@
+body {
+    font-family: 'Abel'
+}
+
 .body-padding {
     padding: 50px;
+    padding-top: 90px;
+}
+
+.row {
+    margin: 0;
+}
+
+.heading {
+    background-color: white;
+    color: rgb(61, 33, 219);
+    padding-left: 50px;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+#pageHeader {
+    color: red;
+    margin-left: 5px;
+}
+
+.eth-icon {
+    height: 40px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 25px;
+}
+
+.section-header {
+    border-bottom: 3px solid red;
+    color: rgb(61, 33, 219);
+    margin-top: 20px;
+}
+
+.header-divider {
+    color: red;
+    margin: 0 20px;
 }
 
 .transaction-button {
     margin-bottom: 20px;
 }
 
-.transaction-table {
-    height: 600px;
+.section-body {
+    max-height: 500px;
     overflow-y: scroll;
 }
 
@@ -19,4 +69,30 @@
 
 .date-label {
     padding-top: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #34db7a;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 100px;
+    left: 45%;
+    z-index: 101;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
